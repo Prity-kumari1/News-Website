@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+
+}
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-text-color);
+}
+p{
+    font-family: sans-serif;
+    line-height: 1.4rem;
+    color: var(--secondary-text-color);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    gap: 16px;
+}
+li{
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.container{
+    max-width: 1100px;
+    margin-inline: auto ;
+    overflow: hidden;
+}
+nav{
+    background-color: #f3faff;
+    box-shadow:  0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+.main-nav{
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.logo img{
+    width: 120px;
+}
+li:hover{
+    cursor: pointer;
+    color: var(--secondary-text-color);
+}
+li:active{
+    color: red;
+}
+.nav-item.active{
+    color: var(--accent-color);
+}
+.search-bar{
+    height: 32px;
+    gap: 8px;
+    font-family: sans-serif;
+}
+.search-bar input{
+    width: 200px;
+    height: 100%;
+    padding: 12px;
+    border: 2px solid #bbd0e2;
+    border-radius: 6px;
+    outline: none;
+}
+.search{
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.search:hover{
+    background-color: var(--accent-color-dark);
+}
+main{
+    margin-top: 120px;
+}
+.card-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4acff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.cards-content{
+    padding: 12px;
+
+}
+.news-source{
+margin-block: 12px;
+}
+
+
+
+
+
+
+
+
